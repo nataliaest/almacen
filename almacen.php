@@ -1,34 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-	<title>Almacén</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-
-
-<h1>Añadir al almacén</h1>
-
-
-<form method="POST" action="index.php"> 
-	<input type="hidden" name="accion" value="anadir" />
-    Añadir a la lista: <input type="text" value="" name="producto"/>
-    Cantidad: <input type="text" value="" name="cantidad_producto"/>
-    Fecha de caducidad: <input type="text" value="" name="fecha_producto"/>
-	<input type="submit" value="Añadir" name="anadir"/>
-</form>
-
-<form method="POST" action="index.php"> 
-    <select name="orden">
-        <option value="fecha_caducidad">Fecha</option>
-        <option value="nombre">Nombre</option>
-    </select>
-	<input type="hidden" name="accion" value="listar" />
-    <input type="submit" value="Ordenar lista" name="ordenar_lista"/>
-</form>
-<h1>Almacén</h1>
 <?php 
 
 $servername = "localhost";
@@ -130,9 +99,3 @@ if($_POST) {
 
 
 ?>
-
-
-</body>
-</html>
-
-
